@@ -1,1 +1,3 @@
-spring.application.name=mybank
+spring:
+  profiles:
+    active: ${APP_PROFILE:local}

@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: mybank
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mybank
+    username: postgres
+    password: postgres
+
+  jpa:
+    open-in-view: false
+    show-sql: false
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        format_sql: false
+
+  flyway:
+    enabled: true
